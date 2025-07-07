@@ -1,0 +1,12 @@
+/* app/ui/home.module.css */
+
+.shape {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
