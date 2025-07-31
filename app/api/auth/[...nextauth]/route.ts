@@ -81,6 +81,6 @@ const handler = NextAuth({
     }
 });
 
-export const { auth, signIn, signOut } = handler;
+
 
 export { handler as GET, handler as POST };
