@@ -115,7 +115,15 @@ export async function authenticateUser(
     formData: FormData,
     ) {
     try {
-        await signIn('credentials', formData);
+        const email = formData.get('email') as string;
+        const password = formData.get('password') as string;
+
+        await signIn('credentials', {
+        redirectTo: '/dashboard',
+        email,
+        password,
+        });
+       
     } catch (error) {
         if (error instanceof AuthError) {
             switch (error.type) {

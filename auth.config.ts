@@ -23,3 +23,4 @@ export const authConfig = {
     providers: [], // Add your authentication providers here
 } satisfies NextAuthConfig;
 
+export default authConfig;
